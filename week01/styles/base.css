@@ -83,6 +83,10 @@ body {
     
  }
 
+ nav a:hover {
+    color: #d7d422;
+ }
+
  /*Styling cards*/
  .card {
     display: flex;
