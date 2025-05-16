@@ -1,0 +1,56 @@
+@media (min-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .menu-toggle {
+        font-size: 1.5rem;
+    }
+    .menu {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        width: auto;
+        top: auto;
+    }
+
+    .menu ul {
+        flex-direction: row;
+        gap: 1rem
+    }
+
+    .menu ul li a {
+        font-size: 1rem;
+        color: white;
+    }
+
+    .menu-toggle,
+    .close-button {
+        display: none;
+    }
+
+    /* main images styles grid */
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .template-grid img {
+        height: 250px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .temple-grid img {
+        height: 250px;
+    }
+}

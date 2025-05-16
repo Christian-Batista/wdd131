@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page is a temple gallery">
+    <meta name="author" content="Christian Batista">
+    <title>Temple Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <p class="title">Temple Album</p>
+
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <nav class="menu">
+            <button class="close-button" aria-label="Close menu">✕</button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+      
+       <div class="temple-grid">
+        <figure>
+            <img src="images/aba-nigeria.jpg" alt="Temple aba nigeria">
+            <figcaption>Temple of Alba Nigeria</figcaption>
+          </figure>
+        
+          <figure>
+            <img src="images/adelaide-australia.jpg" alt="Temple adelaide australia">
+            <figcaption>Temple of Adelaide Australia</figcaption>
+          </figure>
+        
+          <figure>
+            <img src="images/albuquerque.jpg" alt="Temple albuquerque">
+            <figcaption>Temple of Albuquerque New Mexico</figcaption>
+          </figure>
+        
+          <figure>
+            <img src="images/arequipa-peru-low.jpg" alt="Temple arequipa peru">
+            <figcaption>Temple of Arequipa Peru</figcaption>
+          </figure>
+        
+          <figure>
+            <img src="images/asuncion-paraguay.jpg" alt="Temple asuncion paraguay">
+            <figcaption>Temple of Asuncion Paraguay</figcaption>
+          </figure>
+        
+          <figure>
+            <img src="images/Barranquilla-Columbia.jpg" alt="Temple Barranquilla Columbia">
+            <figcaption>Temple of Barranquilla Columbia</figcaption>
+          </figure>
+        
+          <figure>
+            <img src="images/baton-luisiana.jpg" alt="Temple baton luisiana">
+            <figcaption>Temple of Baton Luisiana</figcaption>
+          </figure>
+        
+          <figure>
+            <img src="images/belem_brazil_temple_exterior.jpg" alt="Temple belem brazil">
+            <figcaption>Temple of Belem Brazil</figcaption>
+          </figure>
+        
+          <figure>
+            <img src="images/Salt_Lake.jpg" alt="Temple salt lake">
+            <figcaption>Temple of Salt Lake</figcaption>
+          </figure>
+       </div>
+      </main>
+    <footer>
+        <p><span id="currentYear"></span> 🏝️ Christian Batista 🏝️ La Vega, Dominican Republic</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
