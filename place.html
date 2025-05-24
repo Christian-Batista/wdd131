@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Country Page - WDD 131- Christian Batista">
+    <meta name="author" content="Christian Batista">
+    <title>Country Page</title>
+
+    <!-- External CSS -->
+     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/country.css">
+    <link rel="stylesheet" href="styles/country-large.css">
+
+    <!-- External JS -->
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="title">Dominican Republic</h1>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <!-- Versión móvil (retrato) -->
+                <source media="(max-width: 1024px)" srcset="images/beach-portrait.webp" type="image/webp">
+                <!-- Versión escritorio (paisaje) -->
+                <source srcset="images/wood-dominican-house.webp" type="image/webp">
+                <!-- Fallback -->
+                <img src="images/beach-landscape.webp" alt="Hermosas playas de República Dominicana" loading="lazy">
+            </picture>
+        </div>
+
+        <!-- Data section -->
+        <section class="card" data-type="data">
+            <h2 class="card-heading">Data</h2>
+            <div class="card-content">
+                <p><span>Area:</span> <span>18,792 sq mi (48,671 km²)</span></p>
+                <p><span>Population:</span> <span>11.1 million (2023 est.)</span></p>
+                <p><span>Capital:</span> <span>Santo Domingo</span></p>
+                <p><span>Language:</span> <span>Spanish</span></p>
+                <p><span>Currency:</span> <span>Dominican peso (DOP)</span></p>
+                <p><span>Time zone:</span> <span>UTC-4 (AST)</span></p>
+                <p><span>Calling code:</span> <span>+1-809, +1-829, +1-849</span></p>
+                <p><span>Internet TLD:</span> <span>.do</span></p>
+            </div>
+        </section>
+        <!-- Weather section -->
+        <section class="card" data-type="weather">
+            <h2 class="card-heading">Weather</h2>
+            <img src="images/icons/weather_clouds_cloudy_rain_sunny_icon.svg" 
+                 alt="Weather icon" 
+                 class="weather-icon">
+            <div class="card-content">
+                <p><span>Temperature:</span> <span id="temp">78°F</span></p>
+                <p><span>Condition:</span> <span id="condition">Partly cloudy</span></p>
+                <p><span>Wind:</span> <span id="wind">10 mph</span></p>
+                <p><span>Wind chill:</span> <span id="windChill">N/A</span></p>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p><span id="currentYear"></span> 🏝️ Christian Batista 🏝️ La Vega, Dominican Republic</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

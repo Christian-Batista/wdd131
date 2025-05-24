@@ -1,0 +1,86 @@
+/* Media Queries para desktop */
+@media (min-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: 
+            "hero"
+            "content";
+        position: relative;
+        max-width: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero {
+        grid-area: hero;
+        height: 100vh;
+        margin-top: var(--header-height);
+        position: relative;
+    }
+
+    /* Contenedor para las tarjetas */
+    .content-container {
+        grid-area: content;
+        position: relative;
+        min-height: calc(100vh - var(--header-height) - var(--footer-height));
+        padding: 2rem;
+        max-width: 1400px;
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .card {
+        position: absolute;
+        max-width: 300px;
+        margin: 0;
+        z-index: 1;
+        overflow: visible;
+    }
+
+    .card-heading {
+        position: relative;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 0.8rem 3rem 0.8rem 1rem;
+        margin: -0.5rem -0.5rem 1rem -0.5rem;
+        border-radius: 4px 4px 0 0;
+        max-width: 50%;
+        font-size: 1.2rem;
+        margin-left: -2rem;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        z-index: 2;
+    }
+
+    .card[data-type="data"] {
+        top: 6rem;
+        left: 1rem;
+    }
+
+    .card[data-type="weather"] {
+        bottom: 2rem;
+        right: 1rem;
+    }
+
+    .card[data-type="weather"] .weather-icon {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 1rem;  /* Mover hacia arriba */
+        right: 9.5rem; /* Mover hacia la derecha */
+        
+        /* Mantiene proporciones y calidad */
+        object-fit: contain;
+        filter: drop-shadow(0 2px 3px rgba(0,0,0,0.2));
+        
+        /* Asegura que esté sobre otros elementos */
+        z-index: 3;
+    }
+
+    /* Compensar espacio si el ícono sobresale */
+    .card[data-type="weather"] .card-heading {
+        padding-top: 1.5rem;
+    }
+}
