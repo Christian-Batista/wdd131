@@ -20,3 +20,5 @@ closeBtn.addEventListener('click', () => {
     main.classList.remove('menu-active-main');
   }
 });
+
+
